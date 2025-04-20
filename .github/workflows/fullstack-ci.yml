@@ -26,11 +26,15 @@ jobs:
     # Backend
     - name: Install backend dependencies
       working-directory: ./backend
-      run: npm install
+      run: npm ci
 
     - name: Run backend tests
       working-directory: ./backend
       run: npm test
+
+    - name: Fix Jest permission issue
+      working-directory: ./backend
+      run: chmod +x ./node_modules/.bin/jest 
 
     # Frontend
     - name: Install frontend dependencies
