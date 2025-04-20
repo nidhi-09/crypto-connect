@@ -1,0 +1,15 @@
+<h2>User Crypto Dashboard</h2>
+<table border="1" width="100%">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Crypto</th>
+    <th>Current Price (USD)</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.crypto }}</td>
+    <td>${{ getPrice(user.crypto) }}</td>
+  </tr>
+</table>

@@ -1,0 +1,11 @@
+<h2>Crypto Market</h2>
+<table border="1" width="100%">
+  <tr>
+    <th>Crypto</th>
+    <th>Price (USD)</th>
+  </tr>
+  <tr *ngFor="let coin of coins">
+    <td>{{ coin | titlecase }}</td>
+    <td>${{ cryptoPrices[coin]?.usd }}</td>
+  </tr>
+</table>
