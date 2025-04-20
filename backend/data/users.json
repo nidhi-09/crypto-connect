@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "Alice", "email": "alice@example.com", "crypto": "bitcoin" },
+    { "id": 2, "name": "Bob", "email": "bob@example.com", "crypto": "ethereum" },
+    { "id": 3, "name": "Charlie", "email": "charlie@example.com", "crypto": "bitcoin" }
+  ]
+  
